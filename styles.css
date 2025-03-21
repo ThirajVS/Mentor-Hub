@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A2E;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.about-box {
+    width: 100%; /* Square box width */
+    height: 200px; /* Square box height */
+    background-color: #f4f4f4; /* Light gray background */
+    padding:30px 10px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 0.9rem;
+}
+
+.about-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    top: 30px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(90deg, #007BFF, #1E40AF);
+    color: white;
+
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+}
+.hero-content h1{
+    color:white;
+    font-size:2.0rem;
+}
+.hero .btn {
+    background: #FFD700;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: white;
+    color: #1E40AF;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1E40AF;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+/* Service Cards */
+.service-card, .feature-card, .program-card, .mentor-card, .testimonial-card, .faq-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px; 
+    width:350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mentor Profiles */
+.mentors{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.programs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.testimonials{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.mentor-card img {
+    width: 225px;
+    height: 200px;
+    border-radius: 80%;
+}
+.mentor-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    z-index : -10;
+}
+.service-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    z-index : -10;
+}
+.feature-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    z-index : -10;
+}
+.program-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    z-index : -10;
+}
+.testimonial-card:hover{
+
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    z-index : -10;
+}
+.faq-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+}
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #007BFF;
+}
+
+.contact-form .btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form .btn:hover {
+    background: #FFD700;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}

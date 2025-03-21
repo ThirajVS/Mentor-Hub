@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MentorHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MentorHub</div> 
+        <ul class="nav-links" style = "position : absolute; top : 0px; left : 800px; width: 175px;">
+            <li style = "position : absolute; top : 5px; left : -10px; width: 175px;"><a onclick = "window.location.href='home.html'">Home</a></li>
+            <li style = "position : absolute; top : 5px; left : 70px; width: 175px;"><a onclick = "window.location.href='mentorprofiles.html'">Mentors</a></li>
+<li class="dropdown">
+ <a href="#" style = "position : absolute; top : 5px; left : 130px; width : 100px;">Provisions ▾</a>
+    <ul class="dropdown-menu" style = "position : absolute; top : 30px; left : 75px; width: 175px;">
+            <li><a onclick = "window.location.href='services.html'">Services</a></li>
+            <li><a onclick = "window.location.href='features.html'">Features</a></li>
+            <li><a onclick = "window.location.href='programs.html'">Programs</a></li>  
+    </ul>
+            <li style = "position : absolute; top : 5px; left : 300px; width: 175px;"><a onclick = "window.location.href='testimonials.html'">Testimonials</a></li>
+            <li style = "position : absolute; top : 5px; left : 430px; width: 175px;"><a onclick = "window.location.href='faq.html'">FAQ</a></li>
+            <li style = "position : absolute; top : 5px; left : 500px; width: 175px;"><a onclick = "window.location.href='contact.html'">Contact</a></li>
+	    <li style = "position : absolute; top : 5px; left : 600px; width: 175px;"><a onclick = "window.location.href='login.html'">Login</a></li>
+        </ul>
+    </nav>
+<br><br><br><br><br>
+    <!-- Contact Section -->
+
+        <h1 style="text-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);"><center>Get in Touch</center></h1>
+        <h4><center>If you have any questions, need assistance, or would like to partner with us, feel free to reach out.</center></h4>
+    <section class="contact">
+        <form class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+		<br>
+            <h2>Contact Information</h2>
+            <p><b>Email:</b> support@mentorhub.com</p>
+            <p><b>Phone:</b> +91 9791898486</p>
+            <p><b>Address:</b> Civil Aerodrome, Coimbatore Institute of Technology</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 MentorHub | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
